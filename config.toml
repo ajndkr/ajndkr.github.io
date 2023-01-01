@@ -1,3 +1,82 @@
-baseURL = '/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://ajinkyaindulkar.github.io"
+languageCode = "en"
+theme = "risotto"
+title = "ajkrTERM"
+author = "Ajinkya Indulkar"
+copyright = "© 2023 [Ajinkya Indulkar](https://ajinkyaindulkar.github.io)."
+paginate = 3
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+
+# Automatically add content sections to main menu
+sectionPagesMenu = "main"
+
+[params]
+noindex = false
+
+[params.theme]
+palette = "base16-dark"
+
+# Sidebar: about/bio
+[params.about]
+title = "ajkrTERM"
+description = "A collection of my notes and blog articles."
+logo = "images/rice.svg"
+
+# Sidebar: social links
+[[params.socialLinks]]
+icon = "fa-brands fa-github"
+title = "GitHub"
+url = "https://github.com/AjinkyaIndulkar"
+
+[[params.socialLinks]]
+icon = "fa-brands fa-twitter"
+title = "Twitter"
+url = "https://twitter.com/AjinkyaIndulkar"
+
+# Main menu: sub-pages
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+  [[menu.main]]
+    identifier = "articles"
+    name = "Articles"
+    url = "/articles/"
+    weight = 20
+  [[menu.main]]
+    identifier = "notes"
+    name = "Notes"
+    url = "/notes/"
+    weight = 30
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[privacy]
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+  [privacy.twitter]
+    disabled = false
+    enableDNT = true
+    simple = true
+  [privacy.instagram]
+    disabled = false
+    simple = true
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+[services]
+  [services.instagram]
+    disableInlineCSS = true
+  [services.twitter]
+    disableInlineCSS = true
