@@ -27,6 +27,19 @@ A collection of my notes and blog articles.
 
 -   Update `config.toml`
 
+-   Create homepage and aboutpage content:
+
+    ```
+    hugo new _index.md
+    hugo new about.md
+    ```
+
+-   Create new content (for posts/notes):
+
+    ```
+    hugo new <subpage/page-name.md>
+    ```
+
 -   Test server locally:
 
     ```
