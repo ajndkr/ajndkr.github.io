@@ -42,11 +42,6 @@ url = "https://twitter.com/AjinkyaIndulkar"
     url = "/about/"
     weight = 10
   [[menu.main]]
-    identifier = "articles"
-    name = "Articles"
-    url = "/articles/"
-    weight = 20
-  [[menu.main]]
     identifier = "notes"
     name = "Notes"
     url = "/notes/"
