@@ -26,7 +26,7 @@
 
     ```
     hugo new _index.md
-    hugo new about.md
+    hugo new whoami.md
     ```
 
 -   Create new content (for posts/notes):

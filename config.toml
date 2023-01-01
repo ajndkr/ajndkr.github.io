@@ -37,9 +37,9 @@ url = "https://twitter.com/AjinkyaIndulkar"
 # Main menu: sub-pages
 [menu]
   [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
+    identifier = "whoami"
+    name = "Whoami"
+    url = "/whoami/"
     weight = 10
   [[menu.main]]
     identifier = "notes"
