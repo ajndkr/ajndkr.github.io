@@ -46,6 +46,11 @@ url = "https://twitter.com/AjinkyaIndulkar"
     name = "Notes"
     url = "/notes/"
     weight = 30
+  [[menu.main]]
+    identifier = "changelog"
+    name = "Changelog"
+    url = "/changelog/"
+    weight = 40
 
 [taxonomies]
 category = "categories"
