@@ -2,7 +2,7 @@
 author: Ajinkya
 title: 2023 Yearly Update
 description: A quick update on my plan and goals for 2023
-date: 01-02-2023
+date: 2023-01-01
 tags:
  - yearly
 ---

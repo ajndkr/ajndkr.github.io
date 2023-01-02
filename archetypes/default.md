@@ -2,7 +2,7 @@
 author: Ajinkya
 title: "{{ replace .Name "-" " " | title }}"
 description:
-date: {{ now.Format "01-02-2006" }}
+date: {{ now.Format "2006-02-01" }}
 draft: true
 aliases:
 tags:
