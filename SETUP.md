@@ -35,8 +35,14 @@
     hugo new <subpage/page-name.md>
     ```
 
--   Test server locally:
+-   Create favicon:
 
-    ```
-    hugo server
-    ```
+    - create SVG icon
+    - use https://realfavicongenerator.net/ to generate favicon files and dump inside `static/`
+    - create `layouts/partials/favicons.html`
+
+## Test server Locally:
+
+```
+hugo server
+```
