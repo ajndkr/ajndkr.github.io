@@ -1,3 +1,9 @@
+---
+title: Home
+tags:
+ - index
+---
+
 Welcome to ajkrTERM!
 
 A terminal-style blog on all things related to Maching Learning and stuff I find interesting and worth noting down.

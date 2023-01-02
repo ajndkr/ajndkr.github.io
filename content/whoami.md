@@ -1,5 +1,10 @@
 ---
 title: Whoami
+aliases:
+ - about
+tags:
+ - whoami
+ - about
 ---
 
 Hi! I am Ajinkya, a machine learning engineer at [Sensity](https://sensity.ai/).
