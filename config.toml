@@ -7,6 +7,7 @@ copyright = "© 2023 [Ajinkya Indulkar](https://ajinkyaindulkar.github.io)."
 paginate = 3
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
+enableEmoji = true
 
 # Automatically add content sections to main menu
 sectionPagesMenu = "main"
@@ -21,7 +22,7 @@ palette = "base16-dark"
 [params.about]
 title = "ajkrTERM"
 description = "A collection of my notes and blog articles."
-logo = "images/rice.svg"
+logo = "images/terminal.svg"
 
 # Sidebar: social links
 [[params.socialLinks]]
