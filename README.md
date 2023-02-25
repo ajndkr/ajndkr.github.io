@@ -1,4 +1,4 @@
-# ajinkyaindulkar.github.io
+# ajndkr.github.io
 
 A collection of my notes and blog articles.
 
