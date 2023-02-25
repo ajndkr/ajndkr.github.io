@@ -1,3 +1,3 @@
-module github.com/AjinkyaIndulkar/ajinkyaindulkar.github.io
+module github.com/ajndkr/ajndkr.github.io
 
 go 1.19

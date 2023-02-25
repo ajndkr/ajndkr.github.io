@@ -9,7 +9,7 @@
 -  Initialise project as `go` module:
 
     ```
-    hugo mod init github.com/AjinkyaIndulkar/ajinkyaindulkar.github.io
+    hugo mod init github.com/ajndkr/ajndkr.github.io
     ```
 
 -   Add `risotto` theme as git submodule:

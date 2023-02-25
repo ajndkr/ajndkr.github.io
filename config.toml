@@ -1,9 +1,9 @@
-baseURL = "https://ajinkyaindulkar.github.io"
+baseURL = "https://ajndkr.github.io"
 languageCode = "en"
 theme = "risotto"
-title = "ajkrTERM"
+title = "ajndkrTERM"
 author = "Ajinkya Indulkar"
-copyright = "© 2023 [Ajinkya Indulkar](https://ajinkyaindulkar.github.io)."
+copyright = "© 2023 [Ajinkya Indulkar](https://ajndkr.github.io)."
 paginate = 3
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
@@ -20,7 +20,7 @@ palette = "base16-dark"
 
 # Sidebar: about/bio
 [params.about]
-title = "ajkrTERM"
+title = "ajndkrTERM"
 description = "A collection of my notes and blog articles."
 logo = "images/terminal.svg"
 
@@ -28,12 +28,12 @@ logo = "images/terminal.svg"
 [[params.socialLinks]]
 icon = "fa-brands fa-github"
 title = "GitHub"
-url = "https://github.com/AjinkyaIndulkar"
+url = "https://github.com/ajndkr"
 
 [[params.socialLinks]]
 icon = "fa-brands fa-twitter"
 title = "Twitter"
-url = "https://twitter.com/AjinkyaIndulkar"
+url = "https://twitter.com/ajndkr"
 
 # Main menu: sub-pages
 [menu]

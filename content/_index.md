@@ -4,7 +4,7 @@ tags:
  - index
 ---
 
-Welcome to ajkrTERM!
+Welcome to ajndkrTERM!
 
 A terminal-style blog on all things related to Maching Learning and stuff I find interesting and worth noting down.
 
