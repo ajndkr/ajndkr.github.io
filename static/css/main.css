@@ -33,12 +33,20 @@ a {
 
 .list {
   list-style: none;
-  /* Remove default bullet points */
   margin-bottom: 1em;
 }
 
 .list li {
   margin-bottom: 0.5em;
+}
+
+.lanarky-border {
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.lanarky-link:hover .lanarky-border {
+  transform: scale(1.05);
 }
 
 footer {
@@ -52,10 +60,8 @@ footer {
 
 .social-icons a {
   margin: 0 8px;
-  /* Reduced margin */
   color: #808080;
   font-size: 20px;
-  /* Smaller font size */
   text-decoration: none;
 }
 
@@ -79,23 +85,19 @@ footer {
 
   .list {
     padding-left: 20px;
-    /* Adjusted left padding for lists */
   }
 
   .list li {
     margin-bottom: 0.3em;
     font-size: 16px;
-    /* Increased font size for list items */
   }
 
   footer {
     font-size: 0.9em;
-    /* Slightly larger footer font size */
   }
 
   .social-icons a {
     margin: 0 5px;
     font-size: 18px;
-    /* Increased font size for social icons */
   }
 }
