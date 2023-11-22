@@ -31,15 +31,6 @@ a {
   text-decoration: none;
 }
 
-.list {
-  list-style: none;
-  margin-bottom: 1em;
-}
-
-.list li {
-  margin-bottom: 0.5em;
-}
-
 .lanarky-border {
   border: 2px solid transparent;
   transition: border-color 0.3s ease;
@@ -81,15 +72,6 @@ footer {
   #profile img {
     width: 150px;
     height: 150px;
-  }
-
-  .list {
-    padding-left: 20px;
-  }
-
-  .list li {
-    margin-bottom: 0.3em;
-    font-size: 16px;
   }
 
   footer {
