@@ -1,5 +1,4 @@
-import React from "react";
-import { Github, Twitter, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 function App() {
   return (
@@ -12,7 +11,7 @@ function App() {
         {/* header */}
         <header className="border-b-4 border-zinc-800 p-4 sm:p-6">
           <h1 className="text-xl sm:text-2xl font-bold tracking-tight">
-            AJNDKR.COM
+            AJN/DKR
           </h1>
         </header>
 
@@ -32,15 +31,32 @@ function App() {
             <div className="flex-1 space-y-6 md:space-y-8 text-center md:text-left">
               <div className="space-y-2 md:space-y-4">
                 <h2 className="text-3xl md:text-4xl font-bold">
-                  HEAD OF ENGINEERING_
+                  MACHINE-LEARNING
                 </h2>
+                <h2 className="text-3xl md:text-4xl font-bold">PYTHONISTA_</h2>
               </div>
 
               <p className="text-base md:text-lg leading-relaxed max-w-2xl mx-auto md:mx-0">
-                ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                posuere erat a ante. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor
-                sit amet, consectetur adipiscing elit. Integer posuere erat a
+                <span className="block mb-4">
+                  i build end-to-end machine learning solutions, specialising in
+                  computer vision and generative ai applications.
+                </span>
+
+                <span className="block mb-4">
+                  i'm currently the head of engineering at{" "}
+                  <a
+                    href="https://sensity.ai"
+                    className="text-blue-600 hover:text-blue-800"
+                  >
+                    Sensity AI
+                  </a>
+                  , leading technical strategy and engineering to build
+                  anti-fraud applications.
+                </span>
+
+                <span className="block">
+                  while i mainly code in python, i tinker with rust for fun.
+                </span>
               </p>
             </div>
           </div>
