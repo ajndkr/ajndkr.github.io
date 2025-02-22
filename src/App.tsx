@@ -43,7 +43,7 @@ function App() {
                 </span>
 
                 <span className="block mb-4">
-                  i'm currently the head of engineering at{" "}
+                  currently, i'm the head of engineering at{" "}
                   <a
                     href="https://sensity.ai"
                     className="text-blue-600 hover:text-blue-800"
@@ -55,7 +55,7 @@ function App() {
                 </span>
 
                 <span className="block">
-                  while i mainly code in python, i tinker with rust for fun.
+                  i also tinker with rust for fun.
                 </span>
               </p>
             </div>
