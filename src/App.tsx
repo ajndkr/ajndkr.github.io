@@ -10,23 +10,23 @@ function App() {
       <div className="relative">
         {/* header */}
         <header className="border-b-4 border-zinc-800 p-4 sm:p-6">
-          <h1 className="text-xl sm:text-2xl font-bold tracking-tight">
-            AJN/DKR
-          </h1>
-        </header>
-
-        {/* main content */}
-        <main className="container mx-auto px-4 sm:px-6 py-8 sm:py-12">
-          <div className="flex flex-col items-center md:items-start md:flex-row gap-8 md:gap-12">
-            {/* Profile Image - Moved to top on mobile */}
-            <div className="w-[150px] h-[150px] md:w-[300px] md:h-[300px] border-4 border-zinc-800 rounded-full overflow-hidden flex-shrink-0 md:order-last">
+          <div className="container mx-auto flex flex-col sm:flex-row items-center gap-4">
+            <div className="w-20 h-20 rounded-full border-2 border-zinc-800 overflow-hidden">
               <img
                 src="/images/profile.png"
                 alt="profile"
                 className="w-full h-full object-cover"
               />
             </div>
+            <h1 className="text-xl sm:text-2xl font-bold tracking-tight text-center sm:text-left">
+              AJN/DKR
+            </h1>
+          </div>
+        </header>
 
+        {/* main content */}
+        <main className="container mx-auto px-4 sm:px-6 py-8 sm:py-12">
+          <div className="flex flex-col items-center md:items-start md:flex-row gap-8 md:gap-12">
             {/* left content */}
             <div className="flex-1 space-y-6 md:space-y-8 text-center md:text-left">
               <div className="space-y-2 md:space-y-4">
