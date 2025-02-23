@@ -13,3 +13,13 @@
   opacity: 0.4;
   pointer-events: none;
 }
+
+.blinking-underscore {
+  animation: blink 0.9s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}

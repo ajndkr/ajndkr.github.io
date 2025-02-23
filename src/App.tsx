@@ -33,7 +33,9 @@ function App() {
                 <h2 className="text-3xl md:text-4xl font-bold">
                   MACHINE-LEARNING
                 </h2>
-                <h2 className="text-3xl md:text-4xl font-bold">PYTHONISTA_</h2>
+                <h2 className="text-3xl md:text-4xl font-bold">
+                  PYTHONISTA<span className="blinking-underscore">_</span>
+                </h2>
               </div>
 
               <p className="text-base md:text-lg leading-relaxed max-w-2xl mx-auto md:mx-0">
