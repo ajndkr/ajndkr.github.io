@@ -12,9 +12,9 @@ interface Project {
 
 const OpenSource = () => {
   const [projects, setProjects] = useState<Project[]>([
-    { title: "lanarky", url: "https://github.com/ajndkr/lanarky" },
+    { title: "pr-pulse", url: "https://github.com/ajndkr/pr-pulse" },
     { title: "devx", url: "https://github.com/ajndkr/devx" },
-    { title: "pr-pulse", url: "https://github.com/ajndkr/pr-pulse" }
+    { title: "lanarky", url: "https://github.com/ajndkr/lanarky" }
   ]);
 
   const fetchRepoStats = async (repoName: string): Promise<Project> => {
