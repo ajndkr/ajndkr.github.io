@@ -7,7 +7,7 @@ const Header = () => {
         <div className="flex flex-col sm:flex-row items-center gap-4">
           <div className="w-20 h-20 rounded-full border-2 border-zinc-800 overflow-hidden">
             <img
-              src="/images/profile.png"
+              src="/images/profile.jpeg"
               alt="profile"
               className="w-full h-full object-cover"
             />
