@@ -5,9 +5,7 @@ const Home = () => {
         {/* left content */}
         <div className="flex-1 space-y-6 md:space-y-8 text-center md:text-left">
           <div className="space-y-2 md:space-y-4">
-            <h2 className="text-3xl md:text-4xl font-bold">
-              MACHINE-LEARNING
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-bold">MACHINE-LEARNING</h2>
             <h2 className="text-3xl md:text-4xl font-bold">
               PYTHONISTA<span className="blinking-underscore">_</span>
             </h2>
@@ -27,8 +25,8 @@ const Home = () => {
               >
                 Sensity AI
               </a>
-              , leading technical strategy and engineering to build
-              anti-fraud applications.
+              , leading technical strategy and engineering to build anti-fraud
+              applications.
             </span>
 
             <span className="block">i also tinker with rust for fun.</span>

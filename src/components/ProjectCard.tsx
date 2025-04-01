@@ -9,18 +9,23 @@ interface ProjectCardProps {
   url: string;
 }
 
-const ProjectCard = ({ title, description, language, stars, forks, url }: ProjectCardProps) => {
+const ProjectCard = ({
+  title,
+  description,
+  language,
+  stars,
+  forks,
+  url,
+}: ProjectCardProps) => {
   return (
-    <a 
-      href={url} 
-      target="_blank" 
+    <a
+      href={url}
+      target="_blank"
       rel="noopener noreferrer"
       className="block border-2 border-zinc-800 rounded-lg p-5 hover:shadow-lg transition-shadow duration-300"
     >
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
-      {description && (
-        <p className="text-zinc-600 mb-4">{description}</p>
-      )}
+      {description && <p className="text-zinc-600 mb-4">{description}</p>}
       <div className="flex items-center gap-4">
         {language && (
           <div className="flex items-center gap-1">
