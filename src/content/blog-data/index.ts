@@ -1,5 +1,5 @@
-import * as helloWorld from './hello-world';
-import * as reactTips from './react-tips';
+import * as mvpInTwoDays from "./mvp-in-two-days";
+import * as amIVibeCoder from "./am-i-a-vibe-coder";
 
 export interface BlogPostData {
   slug: string;
@@ -13,16 +13,16 @@ export interface BlogPostData {
 
 // Create a mapping of all blog posts with their slugs
 export const blogPostsData: Record<string, BlogPostData> = {
-  'hello-world': {
-    slug: 'hello-world',
-    metadata: helloWorld.metadata,
-    content: helloWorld.content
+  "mvp-in-two-days": {
+    slug: "mvp-in-two-days",
+    metadata: mvpInTwoDays.metadata,
+    content: mvpInTwoDays.content,
   },
-  'react-tips': {
-    slug: 'react-tips',
-    metadata: reactTips.metadata,
-    content: reactTips.content
-  }
+  "am-i-a-vibe-coder": {
+    slug: "am-i-a-vibe-coder",
+    metadata: amIVibeCoder.metadata,
+    content: amIVibeCoder.content,
+  },
 };
 
 // Export a list of all blog posts
