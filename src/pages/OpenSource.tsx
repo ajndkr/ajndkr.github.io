@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 import ProjectCard from "../components/ProjectCard";
 
 interface Project {
@@ -14,11 +14,13 @@ const OpenSource = () => {
   const [projects, setProjects] = useState<Project[]>([
     { title: "pr-pulse", url: "https://github.com/ajndkr/pr-pulse" },
     { title: "devx", url: "https://github.com/ajndkr/devx" },
-    { title: "lanarky", url: "https://github.com/ajndkr/lanarky" }
+    { title: "lanarky", url: "https://github.com/ajndkr/lanarky" },
   ]);
 
   const fetchRepoStats = async (repoName: string): Promise<Project> => {
-    const response = await fetch(`https://api.github.com/repos/ajndkr/${repoName}`);
+    const response = await fetch(
+      `https://api.github.com/repos/ajndkr/${repoName}`,
+    );
     const data = await response.json();
     return {
       title: repoName,
@@ -26,16 +28,18 @@ const OpenSource = () => {
       url: data.html_url,
       stars: data.stargazers_count,
       forks: data.forks_count,
-      language: data.language
+      language: data.language,
     };
   };
 
   useEffect(() => {
     const fetchAllStats = async () => {
-      const updatedProjects = await Promise.all(projects.map(async (project) => {
-        const stats = await fetchRepoStats(project.title);
-        return stats;
-      }));
+      const updatedProjects = await Promise.all(
+        projects.map(async (project) => {
+          const stats = await fetchRepoStats(project.title);
+          return stats;
+        }),
+      );
       setProjects(updatedProjects);
     };
 
@@ -45,7 +49,9 @@ const OpenSource = () => {
   return (
     <main className="container mx-auto px-4 sm:px-6 py-8 sm:py-12">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-bold mb-6">My Open Source Projects</h2>
+        <h2 className="text-2xl md:text-3xl font-bold mb-6">
+          My Open Source Projects
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project, index) => (
             <ProjectCard

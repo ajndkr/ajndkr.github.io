@@ -17,7 +17,7 @@ function App() {
         {/* content */}
         <div className="relative">
           <Header />
-          
+
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/open-source" element={<OpenSource />} />
@@ -26,7 +26,7 @@ function App() {
               <Route path=":slug" element={<BlogPost />} />
             </Route>
           </Routes>
-          
+
           <Footer />
         </div>
       </div>
