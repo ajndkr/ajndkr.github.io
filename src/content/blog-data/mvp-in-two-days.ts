@@ -1,7 +1,7 @@
 export const metadata = {
   title: "mvp in 2 days",
   date: "2025-03-24",
-  excerpt: "building first version of PR Pulse, an ai-powered report generator",
+  excerpt: "building mvp version of PR Pulse, an ai-powered report generator",
 };
 
 export const content = `
