@@ -17,6 +17,12 @@ const Navbar = () => {
       >
         open-source/
       </Link>
+      <Link 
+        to="/blog" 
+        className={`text-base font-medium ${location.pathname.startsWith('/blog') ? 'text-zinc-800 underline underline-offset-4' : 'text-zinc-600 hover:text-zinc-800'}`}
+      >
+        blog/
+      </Link>
     </nav>
   );
 };
