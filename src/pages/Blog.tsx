@@ -7,7 +7,7 @@ const Blog = () => {
     <>
       <SEO
         title="Blog"
-        description="Thoughts and tutorials on machine learning, computer vision, and software engineering."
+        description="digital thoughts from my brain to yours. no refunds"
         path="/blog"
       />
       <div className="container mx-auto px-4 py-8 max-w-4xl">

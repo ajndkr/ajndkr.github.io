@@ -5,7 +5,7 @@ const Home = () => {
     <>
       <SEO
         title="Home"
-        description="Machine Learning Engineer specializing in computer vision and generative AI applications. Building end-to-end ML solutions."
+        description="everything you wanted to know about me but were afraid to ask Google"
       />
       <main className="container mx-auto px-4 sm:px-6 py-8 sm:py-12">
       <div className="flex flex-col items-center md:items-start md:flex-row gap-8 md:gap-12">

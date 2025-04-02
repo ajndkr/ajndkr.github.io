@@ -8,7 +8,7 @@ interface SEOProps {
 }
 
 const SEO = ({ title, description, path = "", image }: SEOProps) => {
-  const siteUrl = "https://ajndkr.github.io";
+  const siteUrl = "https://ajndkr.com";
   const defaultImage = "/social-card.png"; // You'll need to add this image
 
   const seoData = {
