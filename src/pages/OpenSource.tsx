@@ -10,6 +10,8 @@ interface Project {
   language?: string;
 }
 
+import SEO from "../components/SEO";
+
 const OpenSource = () => {
   const [projects, setProjects] = useState<Project[]>([
     { title: "pr-pulse", url: "https://github.com/ajndkr/pr-pulse" },
@@ -47,10 +49,16 @@ const OpenSource = () => {
   }, []);
 
   return (
-    <main className="container mx-auto px-4 sm:px-6 py-8 sm:py-12">
+    <>
+      <SEO
+        title="Open Source"
+        description="my side projects: more commits than my houseplants get water"
+        path="/open-source"
+      />
+      <main className="container mx-auto px-4 sm:px-6 py-8 sm:py-12">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-2xl md:text-3xl font-bold mb-6">
-          My Open Source Projects
+          my open-source projects
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project, index) => (
@@ -67,6 +75,7 @@ const OpenSource = () => {
         </div>
       </div>
     </main>
+    </>
   );
 };
 
