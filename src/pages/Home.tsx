@@ -1,6 +1,13 @@
+import SEO from "../components/SEO";
+
 const Home = () => {
   return (
-    <main className="container mx-auto px-4 sm:px-6 py-8 sm:py-12">
+    <>
+      <SEO
+        title="Home"
+        description="Machine Learning Engineer specializing in computer vision and generative AI applications. Building end-to-end ML solutions."
+      />
+      <main className="container mx-auto px-4 sm:px-6 py-8 sm:py-12">
       <div className="flex flex-col items-center md:items-start md:flex-row gap-8 md:gap-12">
         {/* left content */}
         <div className="flex-1 space-y-6 md:space-y-8 text-center md:text-left">
@@ -34,6 +41,7 @@ const Home = () => {
         </div>
       </div>
     </main>
+    </>
   );
 };
 
