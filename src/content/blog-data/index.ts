@@ -13,15 +13,15 @@ export interface BlogPostData {
 
 // Create a mapping of all blog posts with their slugs
 export const blogPostsData: Record<string, BlogPostData> = {
-  "mvp-in-two-days": {
-    slug: "mvp-in-two-days",
-    metadata: mvpInTwoDays.metadata,
-    content: mvpInTwoDays.content,
-  },
   "am-i-a-vibe-coder": {
     slug: "am-i-a-vibe-coder",
     metadata: amIVibeCoder.metadata,
     content: amIVibeCoder.content,
+  },
+  "mvp-in-two-days": {
+    slug: "mvp-in-two-days",
+    metadata: mvpInTwoDays.metadata,
+    content: mvpInTwoDays.content,
   },
 };
 

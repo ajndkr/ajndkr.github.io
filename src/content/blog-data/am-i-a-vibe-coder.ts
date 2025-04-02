@@ -1,14 +1,14 @@
 export const metadata = {
   title: "am i a vibe coder?",
-  date: "2025-03-24",
+  date: "2025-04-01",
   excerpt: "my 2 cents on vibe coding",
 };
 
 export const content = `
-am i a vibe coder now?
+## am i a vibe coder now?
 
 for those who are unaware of this new buzz word eating the tech world, **vibe
-coding** is term coined by Andrei Karpathy. he describes it as "a new kind of
+coding** is term coined by Andrej Karpathy. he describes it as "a new kind of
 coding where you fully give in to the vibes, embrace exponentials, and forget
 that the code even exists."
 
@@ -53,7 +53,7 @@ maintaining, especially with ai assistance making creation so inexpensive.
 
 ### references
 
-- [Andrei Karpathy's X post](https://x.com/karpathy/status/1886192184808149383)
+- [Andrej Karpathy's X post](https://x.com/karpathy/status/1886192184808149383)
 - [Claude](https://claude.ai/)
 - [Bolt.new](https://bolt.new/)
 - [Windsurf AI](https://codeium.com/windsurf)

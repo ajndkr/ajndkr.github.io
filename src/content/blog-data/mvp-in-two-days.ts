@@ -5,8 +5,9 @@ export const metadata = {
 };
 
 export const content = `
-just built an mvp in less than 2 days that will soon solve a real problem for my
-team.
+## just built an mvp in less than 2 days...
+
+... that will soon solve a real problem for my team.
 
 i built **PR Pulse**, a tiny ai tool that generates weekly reports of all merged prs
 in a GitHub repository. it's written in Python (using Typer) and i've also
