@@ -16,7 +16,7 @@ function AboutPage() {
         <div className="terminal-prompt font-mono text-sm text-accent">
           cat about.md
         </div>
-        <div className="space-y-4 font-sans text-base leading-relaxed text-foreground">
+        <div className="space-y-4 text-base leading-relaxed text-foreground">
           <p>
             I've been at{" "}
             <a

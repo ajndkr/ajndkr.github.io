@@ -65,7 +65,7 @@ function PostDetail() {
         </div>
       </header>
 
-      <div className="prose prose-sm dark:prose-invert sm:prose-base max-w-none font-sans prose-headings:font-mono prose-headings:font-normal prose-a:text-accent prose-a:no-underline prose-a:hover:underline prose-code:text-accent prose-code:before:content-none prose-code:after:content-none prose-pre:bg-background-secondary prose-pre:border prose-pre:border-border">
+      <div className="prose prose-sm dark:prose-invert sm:prose-base max-w-none prose-headings:font-normal prose-a:text-accent prose-a:no-underline prose-a:hover:underline prose-code:text-accent prose-code:before:content-none prose-code:after:content-none prose-pre:bg-background-secondary prose-pre:border prose-pre:border-border">
         <Component />
       </div>
     </article>

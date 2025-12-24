@@ -42,7 +42,7 @@ export function PostCard({ post }: { post: Post }) {
           </h3>
         </div>
 
-        <p className="line-clamp-2 font-sans text-sm text-foreground-muted sm:pl-20">
+        <p className="line-clamp-2 text-sm text-foreground-muted sm:pl-20">
           {post.excerpt}
         </p>
       </div>

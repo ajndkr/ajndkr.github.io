@@ -15,7 +15,7 @@ function HomePage() {
         <div className="terminal-prompt font-mono text-sm text-accent">
           whoami
         </div>
-        <div className="space-y-4 font-sans text-base leading-relaxed text-foreground">
+        <div className="space-y-4 text-base leading-relaxed text-foreground">
           <p>
             Head of Engineering at{" "}
             <a

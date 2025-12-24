@@ -24,7 +24,6 @@ export default {
       },
       fontFamily: {
         mono: ["var(--font-mono)"],
-        sans: ["var(--font-sans)"],
       },
     },
   },

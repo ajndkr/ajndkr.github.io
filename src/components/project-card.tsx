@@ -23,7 +23,7 @@ export function ProjectCard({ project }: { project: Project }) {
             [{project.status}]
           </span>
         </div>
-        <p className="font-sans text-sm text-foreground-muted">
+        <p className="text-sm text-foreground-muted">
           {project.description}
         </p>
       </div>
