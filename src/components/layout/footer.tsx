@@ -8,7 +8,7 @@ export function Footer() {
   const postCount = getPosts().length;
 
   return (
-    <footer className="flex h-8 w-full items-center justify-between border-t border-border bg-background-secondary px-4 font-mono text-xs text-foreground-muted">
+    <footer className="hidden h-8 w-full items-center justify-between border-t border-border bg-background-secondary px-4 font-mono text-xs text-foreground-muted sm:flex">
       <div className="flex items-center gap-4">
         <div className="flex items-center gap-2">
           <span className="h-2 w-2 rounded-full bg-green-500"></span>
@@ -17,10 +17,10 @@ export function Footer() {
         <span>{currentPath === "/" ? "~" : currentPath}</span>
       </div>
 
-      <span className="hidden sm:inline">© 2025 ajndkr.com</span>
+      <span>© 2025 ajndkr.com</span>
 
       <div className="flex items-center gap-4">
-        <span className="hidden sm:inline">utf-8</span>
+        <span>utf-8</span>
         <span>{postCount} posts</span>
       </div>
     </footer>

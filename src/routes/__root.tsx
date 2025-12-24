@@ -1,10 +1,10 @@
 import { createRootRoute, Outlet, useMatches, useRouter } from "@tanstack/react-router";
-import { TanStackRouterDevtools } from "@tanstack/router-devtools";
 import { ThemeProvider } from "@/components/theme-provider";
 import { NoiseOverlay } from "@/components/noise-overlay";
 import { Header } from "@/components/layout/header";
 import { Sidebar } from "@/components/layout/sidebar";
 import { Footer } from "@/components/layout/footer";
+import { MobileNav } from "@/components/layout/mobile-nav";
 
 import { NotFound } from "@/components/not-found";
 import { useEffect } from "react";
@@ -49,21 +49,22 @@ function RootLayout() {
 
         {/* Row 2: Main Content Area */}
         <div className="flex flex-1 flex-col overflow-hidden sm:flex-row">
-          {/* Sidebar */}
+          {/* Sidebar - hidden on mobile, replaced by bottom nav */}
           <Sidebar />
 
           {/* Content Panel */}
           <main className="flex-1 overflow-y-auto scroll-smooth">
-            <div className="mx-auto w-full max-w-2xl px-4 py-8 sm:px-8">
+            <div className="mx-auto w-full max-w-2xl px-4 py-6 pb-28 sm:px-8 sm:py-8 sm:pb-8">
               <Outlet />
             </div>
           </main>
         </div>
 
-        {/* Row 3: Footer */}
+        {/* Row 3: Footer - hidden on mobile */}
         <Footer />
-        
-        {import.meta.env.DEV && <TanStackRouterDevtools position="bottom-right" />}
+
+        {/* Mobile Bottom Navigation */}
+        <MobileNav />
       </div>
     </ThemeProvider>
   );

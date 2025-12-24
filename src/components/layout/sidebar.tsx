@@ -22,11 +22,11 @@ export function Sidebar() {
   const currentPath = routerState.location.pathname;
 
   return (
-    <nav className="flex w-full flex-col border-b border-border sm:h-full sm:w-48 sm:border-b-0 sm:border-r">
-      <div className="hidden px-4 py-3 text-xs text-foreground-muted sm:block font-mono">
+    <nav className="hidden h-full w-48 flex-col border-r border-border sm:flex">
+      <div className="px-4 py-3 font-mono text-xs text-foreground-muted">
         navigation
       </div>
-      <div className="flex overflow-x-auto sm:flex-col">
+      <div className="flex flex-col">
         {NAV_ITEMS.map((item) => {
           const isActive =
             item.path === "/"
@@ -38,7 +38,7 @@ export function Sidebar() {
               key={item.path}
               to={item.path}
               className={cn(
-                "group flex min-w-fit items-center gap-3 border-l-2 px-4 py-3 font-mono text-sm transition-colors duration-150 sm:py-2",
+                "group flex min-w-fit items-center gap-3 border-l-2 px-4 py-2 font-mono text-sm transition-colors duration-150",
                 isActive
                   ? "border-accent bg-highlight text-accent"
                   : "border-transparent text-foreground-muted hover:bg-highlight hover:text-foreground"

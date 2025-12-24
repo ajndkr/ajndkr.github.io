@@ -21,13 +21,13 @@ export function PostCard({ post }: { post: Post }) {
       params={{ slug: post.slug }}
       className="group block"
     >
-      <div className="relative border-l-2 border-transparent p-4 transition-all duration-150 hover:border-accent hover:bg-background-secondary">
+      <div className="relative min-h-[72px] border-l-2 border-transparent px-3 py-4 transition-all duration-150 active:bg-background-secondary hover:border-accent hover:bg-background-secondary sm:min-h-0 sm:p-4">
         {/* Mobile Layout */}
         <div className="mb-2 flex flex-col sm:hidden">
           <span className="mb-1 font-mono text-xs text-foreground-muted">
             {formattedDate}
           </span>
-          <h3 className="font-mono text-sm font-medium text-accent">
+          <h3 className="font-mono text-base font-medium text-accent">
             {post.title}
           </h3>
         </div>
@@ -42,7 +42,7 @@ export function PostCard({ post }: { post: Post }) {
           </h3>
         </div>
 
-        <p className="line-clamp-2 text-sm text-foreground-muted sm:pl-20">
+        <p className="line-clamp-2 text-sm leading-relaxed text-foreground-muted sm:pl-20">
           {post.excerpt}
         </p>
       </div>

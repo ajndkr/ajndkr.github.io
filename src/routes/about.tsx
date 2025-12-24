@@ -11,19 +11,19 @@ export const Route = createFileRoute("/about")({
 
 function AboutPage() {
   return (
-    <div className="space-y-8">
-      <div className="space-y-2">
+    <div className="space-y-6 sm:space-y-8">
+      <div className="space-y-3 sm:space-y-2">
         <div className="terminal-prompt font-mono text-sm text-accent">
           cat about.md
         </div>
-        <div className="space-y-4 text-base leading-relaxed text-foreground">
+        <div className="space-y-4 text-sm leading-relaxed text-foreground sm:text-base">
           <p>
             I've been at{" "}
             <a
               href="https://sensity.ai/"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-medium text-foreground hover:text-accent hover:underline"
+              className="font-medium text-foreground underline-offset-2 hover:text-accent hover:underline"
             >
               Sensity
             </a>{" "}
@@ -49,10 +49,10 @@ function AboutPage() {
         <h2 className="font-mono text-sm text-foreground-muted">
           # skills.txt
         </h2>
-        <div className="grid gap-8 sm:grid-cols-2">
+        <div className="grid gap-6 sm:grid-cols-2 sm:gap-8">
           <div className="space-y-2">
             <h3 className="font-mono text-xs text-accent">languages</h3>
-            <ul className="font-mono text-sm text-foreground-muted">
+            <ul className="space-y-1 font-mono text-sm text-foreground-muted">
               {SITE_CONFIG.skills.languages.map((skill) => (
                 <li key={skill}>- {skill}</li>
               ))}
@@ -60,7 +60,7 @@ function AboutPage() {
           </div>
           <div className="space-y-2">
             <h3 className="font-mono text-xs text-accent">frameworks & tools</h3>
-            <ul className="font-mono text-sm text-foreground-muted">
+            <ul className="space-y-1 font-mono text-sm text-foreground-muted">
               {SITE_CONFIG.skills.frameworks.map((skill) => (
                 <li key={skill}>- {skill}</li>
               ))}

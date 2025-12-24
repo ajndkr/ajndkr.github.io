@@ -12,7 +12,7 @@ export const Route = createFileRoute("/projects")({
 
 function ProjectsPage() {
   return (
-    <div className="space-y-8">
+    <div className="space-y-6 sm:space-y-8">
       <div className="terminal-prompt font-mono text-sm text-accent">
         find ./projects -type d
       </div>

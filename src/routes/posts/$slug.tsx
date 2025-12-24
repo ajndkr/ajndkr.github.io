@@ -43,21 +43,21 @@ function PostDetail() {
   const { Component, frontmatter } = data as any;
 
   return (
-    <article className="space-y-8">
+    <article className="space-y-6 sm:space-y-8">
       <Link
         to="/posts"
         search={{ page: 1 }}
-        className="group inline-flex items-center gap-2 font-mono text-sm text-foreground-muted hover:text-accent"
+        className="group -ml-2 inline-flex min-h-[44px] items-center gap-2 rounded-md px-2 font-mono text-sm text-foreground-muted transition-colors active:bg-highlight hover:text-accent sm:ml-0 sm:min-h-0"
       >
         <MoveLeft
-          size={16}
-          className="transition-transform group-hover:-translate-x-1"
+          size={18}
+          className="transition-transform group-hover:-translate-x-1 sm:h-4 sm:w-4"
         />
         <span>back to posts</span>
       </Link>
 
-      <header className="space-y-2 border-b border-border pb-8">
-        <h1 className="font-mono text-xl font-bold text-accent sm:text-2xl">
+      <header className="space-y-2 border-b border-border pb-6 sm:pb-8">
+        <h1 className="font-mono text-lg font-bold leading-tight text-accent sm:text-2xl">
           {frontmatter.title}
         </h1>
         <div className="font-mono text-xs text-foreground-muted">
@@ -65,7 +65,7 @@ function PostDetail() {
         </div>
       </header>
 
-      <div className="prose prose-sm dark:prose-invert sm:prose-base max-w-none prose-headings:font-normal prose-a:text-accent prose-a:no-underline prose-a:hover:underline prose-code:text-accent prose-code:before:content-none prose-code:after:content-none prose-pre:bg-background-secondary prose-pre:border prose-pre:border-border">
+      <div className="prose prose-sm dark:prose-invert max-w-none prose-headings:font-normal prose-headings:leading-tight prose-p:leading-relaxed prose-a:text-accent prose-a:no-underline prose-a:active:text-accent-muted prose-a:hover:underline prose-code:text-accent prose-code:before:content-none prose-code:after:content-none prose-pre:overflow-x-auto prose-pre:bg-background-secondary prose-pre:border prose-pre:border-border sm:prose-base">
         <Component />
       </div>
     </article>

@@ -10,19 +10,19 @@ export const Route = createFileRoute("/")({
 
 function HomePage() {
   return (
-    <div className="space-y-8">
-      <div className="space-y-2">
+    <div className="space-y-6 sm:space-y-8">
+      <div className="space-y-3 sm:space-y-2">
         <div className="terminal-prompt font-mono text-sm text-accent">
           whoami
         </div>
-        <div className="space-y-4 text-base leading-relaxed text-foreground">
+        <div className="space-y-4 text-sm leading-relaxed text-foreground sm:text-base">
           <p>
             Head of Engineering at{" "}
             <a
               href="https://sensity.ai/"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-medium text-foreground hover:text-accent hover:underline"
+              className="font-medium text-foreground underline-offset-2 hover:text-accent hover:underline"
             >
               Sensity
             </a>

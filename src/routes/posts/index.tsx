@@ -46,10 +46,10 @@ function PostsIndex() {
   };
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-6 sm:space-y-8">
       <div className="terminal-prompt font-mono text-sm text-accent">
         ls -la ./content/posts --group-by-year
-        </div>
+      </div>
 
       <div className="space-y-px">
         {paginatedPosts.map((post, index) => {
@@ -65,12 +65,12 @@ function PostsIndex() {
           return (
             <div key={post.slug}>
               {showYearHeader && (
-                <div className="flex items-center gap-4 py-6 first:pt-2">
-                  <span className="font-mono text-xl font-bold text-primary">
+                <div className="flex items-center gap-3 py-4 first:pt-2 sm:gap-4 sm:py-6">
+                  <span className="font-mono text-lg font-bold text-primary sm:text-xl">
                     {year}
                   </span>
                   <div className="h-px flex-1 bg-border" />
-                  <span className="font-mono text-sm text-foreground-muted">
+                  <span className="font-mono text-xs text-foreground-muted sm:text-sm">
                     {yearCounts[year]} entries
                   </span>
                 </div>
