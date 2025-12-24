@@ -1,25 +1,166 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@import "tw-animate-css";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --color-background: hsl(var(--background));
+  --color-background-secondary: hsl(var(--background-secondary));
+  --color-foreground: hsl(var(--foreground));
+  --color-foreground-muted: hsl(var(--foreground-muted));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-muted: hsl(var(--accent-muted));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  --color-highlight: hsl(var(--highlight));
+  --color-chart-1: hsl(var(--chart-1));
+  --color-chart-2: hsl(var(--chart-2));
+  --color-chart-3: hsl(var(--chart-3));
+  --color-chart-4: hsl(var(--chart-4));
+  --color-chart-5: hsl(var(--chart-5));
+  --color-sidebar: hsl(var(--sidebar));
+  --color-sidebar-foreground: hsl(var(--sidebar-foreground));
+  --color-sidebar-primary: hsl(var(--sidebar-primary));
+  --color-sidebar-primary-foreground: hsl(var(--sidebar-primary-foreground));
+  --color-sidebar-accent: hsl(var(--sidebar-accent));
+  --color-sidebar-accent-foreground: hsl(var(--sidebar-accent-foreground));
+  --color-sidebar-border: hsl(var(--sidebar-border));
+  --color-sidebar-ring: hsl(var(--sidebar-ring));
+}
 
 @layer base {
-  body {
-    font-family: "JetBrains Mono", monospace;
+  :root {
+    /* Signal Light Mode */
+    --background: 240 2% 97%;
+    --background-secondary: 240 2% 94%;
+    --foreground: 240 5% 11%;
+    --foreground-muted: 240 3% 45%;
+
+    --card: 240 2% 97%;
+    --card-foreground: 240 5% 11%;
+    --popover: 240 2% 97%;
+    --popover-foreground: 240 5% 11%;
+
+    --primary: 240 4% 24%;
+    --primary-foreground: 240 2% 97%;
+
+    --secondary: 240 2% 94%;
+    --secondary-foreground: 240 5% 11%;
+
+    --muted: 240 2% 94%;
+    --muted-foreground: 240 3% 45%;
+
+    --accent: 240 4% 24%;
+    --accent-muted: 240 3% 37%;
+    --accent-foreground: 240 2% 97%;
+
+    --border: 240 5% 84%;
+    --input: 240 5% 84%;
+    --ring: 240 4% 24%;
+
+    --highlight: 240 4% 24% / 0.12;
+
+    --radius: 0.25rem;
+
+    /* Typography */
+    --font-mono: "JetBrains Mono", "Fira Code", "SF Mono", Consolas, monospace;
+    --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+
+    /* Noise texture */
+    --noise-opacity: 0.1;
+  }
+
+  .dark {
+    /* Signal Dark Mode */
+    --background: 240 7% 4%;
+    --background-secondary: 240 5% 7%;
+    --foreground: 240 4% 68%;
+    --foreground-muted: 240 3% 37%;
+
+    --card: 240 5% 7%;
+    --card-foreground: 240 4% 68%;
+    --popover: 240 5% 7%;
+    --popover-foreground: 240 4% 68%;
+
+    --primary: 240 5% 84%;
+    --primary-foreground: 240 7% 4%;
+
+    --secondary: 240 5% 7%;
+    --secondary-foreground: 240 4% 68%;
+
+    --muted: 240 5% 7%;
+    --muted-foreground: 240 3% 37%;
+
+    --accent: 240 5% 84%;
+    --accent-muted: 240 3% 50%;
+    --accent-foreground: 240 7% 4%;
+
+    --border: 240 4% 15%;
+    --input: 240 4% 15%;
+    --ring: 240 5% 84%;
+
+    --highlight: 240 4% 68% / 0.12;
+
+    --noise-opacity: 0.1;
   }
 }
 
-.noise {
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-  opacity: 0.4;
-  pointer-events: none;
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6,
+  code, pre, kbd, samp,
+  nav, .font-mono {
+    font-family: var(--font-mono);
+  }
 }
 
-.blinking-underscore {
-  animation: blink 0.9s step-start infinite;
-}
+@layer components {
+  /* Type scale */
+  .text-xs { font-size: 0.75rem; line-height: 1rem; }
+  .text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+  .text-base { font-size: 1rem; line-height: 1.5rem; }
+  .text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+  .text-xl { font-size: 1.25rem; line-height: 1.75rem; }
+  .text-2xl { font-size: 1.5rem; line-height: 2rem; }
+  .text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
 
-@keyframes blink {
-  50% {
-    opacity: 0;
+  /* Terminal-style elements */
+  .terminal-prompt::before {
+    content: ">";
+    @apply mr-2;
+    color: hsl(var(--accent-muted));
+  }
+
+  .terminal-path::before {
+    content: "~/";
+    color: hsl(var(--foreground-muted));
   }
 }

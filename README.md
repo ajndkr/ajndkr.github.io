@@ -1,14 +1,34 @@
-# personal website
+# ajndkr.com
 
-brutalist design with monospace typography.
+A personal blog with a terminal-inspired aesthetic. Looks like a TUI, works like a web app.
 
-tech stack:
+## Stack
 
-- vite + react + tailwindcss + lucide-react icons
+- React 18 + TypeScript
+- Vite
+- Tailwind CSS + shadcn/ui
+- TanStack Router
+- MDX
 
-local development:
+## Development
 
 ```bash
-npm install
-npm run dev
+pnpm install
+pnpm dev
+```
+
+## Build
+
+```bash
+pnpm build
+pnpm preview
+```
+
+## Structure
+
+```
+src/
+├── routes/       # File-based routing
+├── components/   # UI components
+└── content/      # MDX blog posts
 ```
