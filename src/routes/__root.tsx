@@ -32,7 +32,7 @@ function RootLayout() {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const route = router.routesById[match.routeId] as any;
       const head = route.options.head(match);
-      const titleMeta = head.meta?.find((m: any) => m.title);
+      const titleMeta = head.meta?.find((m: { title?: string }) => m.title);
       if (titleMeta?.title) {
         document.title = titleMeta.title;
       }
