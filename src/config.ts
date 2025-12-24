@@ -9,30 +9,30 @@ export const SITE_CONFIG = {
   },
   projects: [
     {
-      slug: "signal-ui",
-      name: "Signal UI",
-      description: "Terminal-inspired component library for React applications.",
+      slug: "pr-pulse",
+      name: "pr-pulse",
+      description: "Generate weekly reports of all code changes in a github repository.",
       status: "active",
-      url: "#",
+      url: "https://github.com/ajndkr/pr-pulse",
     },
     {
-      slug: "dotfiles",
-      name: "Dotfiles",
-      description: "My personal configuration files for Zsh, Neovim, and Tmux.",
-      status: "stable",
-      url: "#",
+      slug: "devx",
+      name: "devx",
+      description: "CLI for automating my dev workflows.",
+      status: "active",
+      url: "https://github.com/ajndkr/devx",
     },
     {
-      slug: "mdx-blog",
-      name: "MDX Blog Starter",
-      description: "A minimal blog starter using TanStack Router and MDX.",
-      status: "beta",
-      url: "#",
+      slug: "lanarky",
+      name: "lanarky",
+      description: "The web framework for building LLM microservices.",
+      status: "deprecated",
+      url: "https://github.com/ajndkr/lanarky",
     },
   ],
   skills: {
-    languages: ["TypeScript", "JavaScript", "Python", "Rust", "HTML/CSS", "SQL", "Go", "Bash"],
-    frameworks: ["React", "Next.js", "Tailwind CSS", "Node.js", "PostgreSQL", "Docker", "Git", "Vite", "TanStack Router"],
+    languages: ["Python", "Go", "Bash", "SQL", "TypeScript [wip]", "Rust [wip]"],
+    frameworks: ["PyTorch", "FastAPI", "Django", "Git", "Docker", "Kubernetes", "Pulumi", "Github Actions", "Google Cloud", "React + Tailwind CSS [wip]"],
   }
 } as const;
 
