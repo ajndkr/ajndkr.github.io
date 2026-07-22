@@ -22,6 +22,19 @@ function ProjectsPage() {
           <ProjectCard key={project.slug} project={project} />
         ))}
       </div>
+
+      <p className="text-sm text-foreground-muted">
+        More on{" "}
+        <a
+          href="https://github.com/ajndkr?tab=repositories"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-medium text-foreground underline-offset-2 hover:text-accent hover:underline"
+        >
+          GitHub
+        </a>
+        .
+      </p>
     </div>
   );
 }
