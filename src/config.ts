@@ -9,18 +9,18 @@ export const SITE_CONFIG = {
   },
   projects: [
     {
-      slug: "pr-pulse",
-      name: "pr-pulse",
-      description: "Generate weekly reports of all code changes in a github repository.",
+      slug: "uv-boilerplate",
+      name: "uv-boilerplate",
+      description: "Template repository for new uv projects with boilerplate code.",
       status: "active",
-      url: "https://github.com/ajndkr/pr-pulse",
+      url: "https://github.com/ajndkr/uv-boilerplate",
     },
     {
-      slug: "devx",
-      name: "devx",
-      description: "CLI for automating my dev workflows.",
+      slug: "claude-usage",
+      name: "claude-usage",
+      description: "Tiny app to track Claude Code usage in real-time.",
       status: "active",
-      url: "https://github.com/ajndkr/devx",
+      url: "https://github.com/ajndkr/claude-usage",
     },
     {
       slug: "lanarky",
@@ -31,8 +31,8 @@ export const SITE_CONFIG = {
     },
   ],
   skills: {
-    languages: ["Python", "Go", "Bash", "SQL", "TypeScript [wip]", "Rust [wip]"],
-    frameworks: ["PyTorch", "FastAPI", "Django", "Git", "Docker", "Kubernetes", "Pulumi", "Github Actions", "Google Cloud", "React + Tailwind CSS [wip]"],
+    languages: ["Python", "Go", "TypeScript", "Bash", "SQL"],
+    frameworks: ["PyTorch", "FastAPI", "Django", "React + Tailwind CSS", "Git", "Docker", "Kubernetes", "Pulumi", "Github Actions", "Google Cloud"],
   }
 } as const;
 
