@@ -11,9 +11,9 @@ import {
 
 const NAV_ITEMS = [
   { label: "home", path: "/", icon: Home },
-  { label: "posts", path: "/posts", icon: FileText },
   { label: "about", path: "/about", icon: User },
   { label: "projects", path: "/projects", icon: FolderOpen },
+  { label: "posts", path: "/posts", icon: FileText },
   { label: "contact", path: "/contact", icon: Mail },
 ];
 
