@@ -27,12 +27,14 @@ function HomePage() {
               Sensity
             </a>
             , where we're building the foundational security layer against deepfakes and synthetic media.
+            Six-plus years turning computer vision and generative AI research into production systems,
+            currently leading an engineering team of 8+ across backend, ML, and frontend.
           </p>
           <p>
             I specialize in end-to-end ML/AI systems; the kind where you actually
             have to ship something, not just beat a benchmark. These days I spend
-            more time on technical strategy and team building than writing code,
-            but I still sneak in commits when no one's looking.
+            more time on technical strategy, architecture, and team building than
+            writing code, but I still sneak in commits when no one's looking.
           </p>
         </div>
       </div>

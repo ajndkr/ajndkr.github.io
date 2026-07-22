@@ -27,20 +27,27 @@ function AboutPage() {
             >
               Sensity
             </a>{" "}
-            for a few years now, working on various deepfake detection products. 
-            My path here has taken me from training models to deploying them in production and 
-            everything in between. I'm not just the ML person; I've gotten my hands dirty with 
-            backend systems and DevOps work too.
+            for six-plus years now, working across the full stack of deepfake detection: computer
+            vision research, model training, and shipping it all to production. I did my MSc in AI
+            at Radboud University (cum laude), with a thesis on lip-sync deepfake detection done
+            right here at Sensity. Started as a Machine Learning Engineer in 2021, moved up to
+            Senior ML Engineer in 2023, and I've been Head of Engineering since 2024. I'm not just
+            the ML person; I've gotten my hands dirty with backend systems and DevOps work too.
           </p>
           <p>
-            Alongside the core product work, I spent nearly three years on generative AI and LLM 
-            consulting projects that let us stay sharp on cutting-edge research while actually getting 
-            paid for it. Best of both worlds.
+            Alongside the core product work, I spent nearly three years on generative AI and LLM
+            consulting projects that let us stay sharp on cutting-edge research while actually getting
+            paid for it. That work produced lanarky, an open-source framework for building LLM
+            microservices that's since picked up 900+ GitHub stars. I'm also an early maintainer of
+            DOT, a widely-adopted open-source deepfake toolkit with 4,500+ stars.
           </p>
           <p>
-            Now I lead our engineering team. Less time writing code, more time
-            thinking about technical strategy, and discovering that my
-            calendar has strong opinions about when I eat lunch.
+            Now I lead an engineering team of 8+ across backend, full-stack, ML, and frontend, plus
+            QA: setting technical direction, owning the roadmap, and keeping a predictable release
+            cadence across a handful of microservices and our on-premise product. I've also run
+            technical due diligence twice, once for an internal funding round and once for a client
+            acquisition. Less time writing code, more time thinking about technical strategy, and
+            discovering that my calendar has strong opinions about when I eat lunch.
           </p>
         </div>
       </div>
