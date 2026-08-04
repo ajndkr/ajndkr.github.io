@@ -4,6 +4,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Personal blog/site: React 18 + TypeScript on Vite, TanStack Router (file-based), Tailwind CSS + shadcn/ui, blog posts authored as MDX.
 
+## Conventions
+
+- **No em-dashes.** Never use `—` or `–` anywhere: code, comments, docs, commit messages, prose. Use a colon, ` - `, parentheses, or two sentences.
+
+### Commits
+
+Subject format `type: description`, under 72 chars, description starts with an action verb (`add`, `fix`, `update`...). No body and no `Co-Authored-By` trailer unless asked. Never amend or force-push unless asked. Types: `feat`, `fix`, `refactor`, `chore`, `build`, `docs`. Single-package repo, so no scope.
+
 ## Commands
 
 - `pnpm dev` - start the local dev server
@@ -12,10 +20,6 @@ Personal blog/site: React 18 + TypeScript on Vite, TanStack Router (file-based),
 - `pnpm lint` - `eslint .`
 
 There is no test suite. Verify changes with `pnpm dev` and a visual check in the browser, and run `pnpm lint` + `pnpm build` before considering a change done.
-
-### Commits
-
-Subject format `type: description`, description starts with an action verb (`add`, `fix`, `update`...). Types: `feat`, `fix`, `refactor`, `chore`. Single-package repo, so no scope.
 
 ## Architecture
 
