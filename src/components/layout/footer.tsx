@@ -17,7 +17,7 @@ export function Footer() {
         <span>{currentPath === "/" ? "~" : currentPath}</span>
       </div>
 
-      <span>© 2025 ajndkr.com</span>
+      <span>© 2026 ajndkr.com</span>
 
       <div className="flex items-center gap-4">
         <span>utf-8</span>

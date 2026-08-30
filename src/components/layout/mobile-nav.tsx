@@ -32,7 +32,7 @@ export function MobileNav() {
         </div>
         <div className="flex items-center gap-3">
           <span>{postCount} posts</span>
-          <span>© 2025</span>
+          <span>© 2026</span>
         </div>
       </div>
 
